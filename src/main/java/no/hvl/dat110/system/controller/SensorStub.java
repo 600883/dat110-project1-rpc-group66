@@ -16,7 +16,7 @@ public class SensorStub extends RPCLocalStub {
 
 		// make remote procedure call for read
 		byte[] response = rpcclient.call((byte)Common.READ_RPCID, request);
-
+ 
 		// unmarshall the return value from the call (an integer)
 		int temp = RPCUtils.unmarshallInteger(response);
 
